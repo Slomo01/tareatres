@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>3-FACTORIAL</title>
+</head>
+<body>
+    <script>
+        function factorial(num) {
+
+            if (num === 0 || num === 1) {
+                return 1;
+            }
+
+            let resultado = 1;
+            for (let i = num; i > 1; i--) {
+                resultado *= i;
+            }
+            return resultado;
+        }
+        let numero = parseInt(prompt("Ingresa un número:"));
+        alert("El factorial de " + numero + " es: " + factorial(numero));
+    </script>
+</body>
+</html>

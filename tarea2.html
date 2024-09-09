@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let number;
+        number = prompt("Digite un numero para para calcular la operacion");
+        if (number % 3 === 0 && number % 5 === 0) {    // Cuando es divisible  entre 3 y cinco
+            alert("El numero ingresado es divisible  entre 3 y 5 ");
+        } else if (number % 3 === 0) {    // Cuando es divisible  entre 3
+            alert("El numero es divisible entre 3");
+        } else if (number % 5 === 0) {      // Cuando es divisible  entre 5
+            alert("El numero es divisible entre   5");
+        } else {      // Cuando es caso contrario a los casos mencionados
+            alert("El numero que ingresaste no es divisible de 3 y 5");
+        }
+        let listaDivisibles = [];
+        for (let i = 1; i <= number; i++) {
+            if (i % 3 === 0 || i % 5 === 0) {
+                listaDivisibles.push(i); // Añadir el número a la lista si es divisible
+            }
+        }
+        alert("Números divisibles entre 3 o 5 desde 1 hasta " + number + ": " + listaDivisibles.join(", "));
+    </script>
+</body>
+
+</html>
